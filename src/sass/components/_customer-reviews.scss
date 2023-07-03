@@ -1,0 +1,156 @@
+.swiper {
+  max-width: 480px;
+  max-height: 540px;
+}
+.customer-review {
+  padding-top: 80px;
+  padding-bottom: 170px;
+  &__picture {
+    // border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 30px;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__quote {
+    background: $sliderBg;
+    z-index: -2;
+    width: 100%;
+  }
+  &__paragraph {
+    max-height: 250px;
+    max-width: 524px;
+    position: relative;
+    @include font-mixin($sans, 500, 12px, 2.583, normal, $black);
+    padding-inline: 11.5px 11.5px;
+    text-align: center;
+    background: repeating-linear-gradient($sliderBg, $sliderBg 30px, $gray 30px, $gray 31px);
+    margin: 43px 50px 17px 50px;
+    z-index: 0;
+    &::before {
+      content: '\275E';
+      font-size: 8rem;
+      color: $gray;
+      position: absolute;
+      left: 10px;
+      top: -133px;
+      z-index: -1;
+    }
+  }
+
+  &__dots {
+    margin: 14px auto 18px;
+  }
+
+  &__dot {
+    stroke: $sliderAfterDots;
+    stroke-width: 1;
+    fill: $sliderAfterDots;
+    margin: 0 5px;
+  }
+
+  &__name {
+    @include font-mixin($sans, 500, 14px, 1.86, normal, $black);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+/* ------------------------- TABLET ------------------------------ */
+
+@media screen and (min-width: 481px) {
+  .swiper {
+    max-width: 620px;
+    max-height: 412px;
+  }
+  .customer-review {
+    padding-top: 123px;
+    padding-bottom: 197px;
+    &__paragraph {
+      max-width: 466px;
+      max-height: 108px;
+      padding-inline: 0;
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
+      margin: 46px 80px 17px 80px;
+      padding-bottom: 10px;
+      &::before {
+        font-size: 7rem;
+        top: -95px;
+        left: -27px;
+      }
+    }
+    &__quote {
+      height: 100%;
+    }
+
+    &__dots {
+      margin: 16px auto 9px;
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 1.875;
+    }
+    &__picture {
+      margin-bottom: 21px;
+    }
+    &__slide {
+      margin-bottom: 35px;
+    }
+  }
+}
+@media screen and (min-width: 660px) {
+  .customer-review {
+    &__quote {
+      max-height: 164px;
+    }
+  }
+}
+
+/* --------------------------- DESKTOP ---------------------------- */
+
+@media screen and (min-width: 769px) {
+  .swiper {
+    max-width: 926px;
+  }
+  .customer-review {
+    &__paragraph {
+      max-width: 822px;
+      font-size: 16px;
+      line-height: 1.86;
+      margin: 38px 87px 17px 81px;
+      padding-inline: 8px;
+      &::before {
+        font-size: 7rem;
+        top: -82px;
+        left: -30px;
+      }
+    }
+    &__picture {
+      margin-bottom: 15px;
+    }
+    &__quote {
+      max-height: 138px;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 1.85;
+    }
+    &__slide {
+      margin-bottom: 35px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    padding-top: 123px;
+    padding-bottom: 234px;
+  }
+}

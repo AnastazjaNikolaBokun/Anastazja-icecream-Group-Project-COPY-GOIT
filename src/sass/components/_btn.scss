@@ -1,0 +1,141 @@
+.btn {
+  cursor: pointer;
+  border-radius: 22px;
+  border: none;
+
+  &--products {
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
+    background-color: $brand-red;
+    padding: 7px 13px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnRedHover;
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $white);
+      padding: 11px 22px;
+    }
+  }
+
+  &--about {
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $brand-red);
+    background-color: $white;
+    padding: 7px 13px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnWhiteHover;
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $brand-red);
+      padding: 11px 22px;
+    }
+  }
+
+  &--product {
+    border-radius: 50%;
+  }
+
+  &--about-page {
+    @include font-mixin($sans, 700, 14px, 1.29, normal, $brand-red);
+    background-color: $white;
+    width: 100%;
+    max-width: 176px;
+    height: 44px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnWhiteHover;
+    }
+
+    @media screen and (min-width: 768px) {
+      @include font-mixin($sans, 700, 16px, 1.31, normal, $brand-red);
+    }
+  }
+
+  &--locations {
+    @include font-mixin($sans, 700, 16px, 1.31, normal, $brand-red);
+    color: $white;
+    background-color: $ourLocationsBtn;
+    padding: 7px 13px;
+    width: 100%;
+    max-width: 161px;
+    height: 44px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnRedHover;
+    }
+  }
+
+  &--franchise {
+    @include font-mixin($sans, 700, 16px, 1.31, normal, $brand-red);
+    color: $brand-red;
+    background-color: $white;
+    padding: 7px 13px;
+    width: 100%;
+    max-width: 161px;
+    height: 44px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnWhiteHover;
+    }
+  }
+
+  &--buy-now {
+    @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
+    background-color: $white;
+    z-index: 10;
+    width: 160px;
+    height: 44px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnWhiteHover;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &--mobile-menu {
+    @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
+    background-color: $white;
+    z-index: 10;
+    width: 209px;
+    height: 44px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 20px 19px 21px;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+
+    &:hover {
+      background-color: $btnWhiteHover;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<section class="about">
+  <div class="container">
+    <span class="about__title">TRADITION AND LOVE</span>
+    <h2 class="about__tittle-2th" id="about">HOW IT`S MADE?</h2>
+    <div class="about__wrapper">
+      <img
+        class="about__img"
+        srcset="
+          ./images/home-pic4_1x.png 1x,
+          ./images/home-pic4_2x.png 2x,
+          ./images/home-pic4_4x.png 4x
+        "
+        src="./images/home-pic4_1x.png"
+        alt="krowa i dzbanek"
+      />
+      <div class="about__text-wrapper">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__description">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. <br />
+          <br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="btn btn--about-page" type="button" data-modal-about-open>
+          Read more
+          <svg width="20" height="12">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="backdrop-about is-hidden-about" data-modal-about>
+  <div class="modal-about">
+    <button type="button" class="button-modal-about" data-modal-about-close>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="11"
+        height="11"
+        viewBox="0 0 11 11"
+        fill="none"
+      >
+        <path
+          d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+          fill="white"
+        />
+      </svg>
+    </button>
+    <div class="modal-about-content">
+      <p class="modal-about-content__text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempore aut dicta dolor
+        cupiditate rerum iste nemo nesciunt? Eveniet, eaque minima rem nam quisquam ducimus officiis
+        beatae doloribus delectus fuga.
+      </p>
+      <iframe
+        width="315"
+        src="https://www.youtube.com/embed/vRXZj0DzXIA"
+        title="BLACKPINK - 'Ice Cream (with Selena Gomez)' M/V"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
